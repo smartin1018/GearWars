@@ -5,7 +5,7 @@ GearWars is a game created years ago but never made it out of beta, the maps use
 You can see many ways the game could be improved, but it just never got the love it deserved.
 
 # Compatibility
-This plugin works with 1.12.2, and requires InventoryAPI.
+This plugin works with 1.12.2, and requires [InventoryAPI](https://github.com/smartin1018/InventoryApi).
 
 # Issues and the Server
 The issues page serves as the issues for the plugin, and the server I run it on.
@@ -13,6 +13,6 @@ The issues page serves as the issues for the plugin, and the server I run it on.
 Server: gearwars.martoph.com
 
 # Credits
-Originally created by libraryaddict
+Originally created by libraryaddict [spigot](https://www.spigotmc.org/members/libraryaddict.1592/) [github](https://github.com/libraryaddict)
 
 Updated to 1.12.2 by Martoph (smartin1018, TheAndroidMan)

@@ -4,22 +4,13 @@ GearWars is a game created years ago but never made it out of beta, the maps use
 
 You can see many ways the game could be improved, but it just never got the love it deserved.
 
-# To run it
+# Compatibility
+This plugin works with 1.12.2, and requires InventoryAPI.
 
-The game is created for 1.7.10 and the plugins required are included in the dependencies folder.
-You need InventoryAPI, Lib's Disguises and ProtocolLib
+# Issues and the Server
+The issues page serves as the issues for the plugin, and the server I run it on.
+Server: gearwars.martoph.com
 
-# To build it
-
-To build the plugin, you need maven.
-
-# Maps
-
-Please be aware that I do not own these maps, they were always meant to be temporary maps.
-You must place them in ServerRoot/Maps/GearWars/
-
-https://www.dropbox.com/s/9rrwv316vzgr2m9/CastleTown.zip?dl=0
-
-https://www.dropbox.com/s/mm7ggp61ev73zcq/Depression%20of%20Falkirk.zip?dl=0
-
-https://www.dropbox.com/s/6grycrrrv1z4uqj/Mountains.zip?dl=0
+# Credits
+Originally created by libraryaddict
+Updated to 1.12.2 by Martoph (smartin1018, TheAndroidMan)

@@ -9,6 +9,7 @@ This plugin works with 1.12.2, and requires InventoryAPI.
 
 # Issues and the Server
 The issues page serves as the issues for the plugin, and the server I run it on.
+
 Server: gearwars.martoph.com
 
 # Credits

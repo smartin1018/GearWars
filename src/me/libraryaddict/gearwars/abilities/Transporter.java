@@ -127,7 +127,7 @@ public class Transporter extends AbilityListener implements Disableable {
                 }
                 Block block = portals.remove(p);
                 block.setType(Material.AIR);
-                p.playSound(p.getLocation(), Sound.ENDERMAN_TELEPORT, 1, 1);
+                p.playSound(p.getLocation(), Sound.ENTITY_ENDERMEN_TELEPORT, 1, 1);
                 p.teleport(block.getLocation().clone().add(0.5, 0.5, 0.5));
                 p.sendMessage(ChatColor.BLUE + "Transported!");
                 return true;

@@ -30,7 +30,7 @@ public class BoomBox extends AbilityListener implements Disableable {
             if (event.getAction().name().contains("RIGHT")) {
                 Block block = event.getClickedBlock();
                 if (block == null) {
-                    block = player.getTargetBlock(new HashSet(), 2);
+                    block = player.getTargetBlock((HashSet<Material>) new HashSet(), 2);
                 }
                 if (block != null && block.getType() == Material.WOOL && block.getData() == (byte) 15) {
                     event.setCancelled(true);

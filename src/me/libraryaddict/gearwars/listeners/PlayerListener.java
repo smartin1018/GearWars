@@ -183,7 +183,7 @@ public class PlayerListener implements Listener {
                         }
                     }
                 }
-                gamer.getPlayer().playSound(gamer.getPlayer().getLocation(), Sound.CLICK, 1, 10);
+                gamer.getPlayer().playSound(gamer.getPlayer().getLocation(), Sound.BLOCK_STONE_BUTTON_CLICK_ON, 1, 10);
                 if (toTrack != null) {
                     gamer.getPlayer().sendMessage(ChatColor.RED + "Compass pointing at " + toTrack.getName());
                     gamer.getPlayer().setCompassTarget(toTrack.getPlayer().getLocation());

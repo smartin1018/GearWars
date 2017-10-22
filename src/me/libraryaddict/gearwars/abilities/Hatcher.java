@@ -5,15 +5,12 @@ import me.libraryaddict.gearwars.events.PlayerKilledEvent;
 import me.libraryaddict.gearwars.misc.Disableable;
 import me.libraryaddict.gearwars.types.AbilityListener;
 import me.libraryaddict.gearwars.types.Gamer;
-import net.minecraft.server.v1_7_R4.MobSpawnerAbstract;
-import net.minecraft.server.v1_7_R4.NBTTagCompound;
-import net.minecraft.server.v1_7_R4.TileEntityMobSpawner;
-import net.minecraft.server.v1_7_R4.TileEntityMobSpawnerData;
+import net.minecraft.server.v1_12_R1.*;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.block.CreatureSpawner;
-import org.bukkit.craftbukkit.v1_7_R4.CraftWorld;
+import org.bukkit.craftbukkit.v1_12_R1.CraftWorld;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
@@ -98,11 +95,10 @@ public class Hatcher extends AbilityListener implements Disableable {
                     spawners.put(event.getPlayer(), new ArrayList<Block>());
                 }
                 spawners.get(event.getPlayer()).add(b);
-                MobSpawnerAbstract spawner = ((TileEntityMobSpawner) ((CraftWorld) b.getWorld()).getHandle().getTileEntity(
-                        b.getX(), b.getY(), b.getZ())).getSpawner();
+                MobSpawnerAbstract spawner = ((TileEntityMobSpawner) ((CraftWorld) b.getWorld()).getHandle().getTileEntity(new BlockPosition(b.getX(), b.getY(), b.getZ()))).getSpawner();
                 NBTTagCompound nbt = new NBTTagCompound();
                 nbt.setString("CustomName", event.getPlayer().getName());
-                TileEntityMobSpawnerData data = new TileEntityMobSpawnerData(spawner, nbt, EntityType.PIG.getName());
+                MobSpawnerData data = new MobSpawnerData(EntityType.PIG.getTypeId(), nbt);
                 spawner.a(data);
             }
         }

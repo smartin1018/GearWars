@@ -149,7 +149,7 @@ public class GameManager {
                 Bukkit.broadcastMessage(ChatColor.RED + "Game starting in " + getTime(getTime()));
                 if (getTime() >= -5) {
                     for (Player p : Bukkit.getOnlinePlayers())
-                        p.playSound(p.getEyeLocation(), Sound.LAVA_POP, 1, 2);
+                        p.playSound(p.getEyeLocation(), Sound.BLOCK_LAVA_POP, 1, 2);
                 }
             }
             ScoreboardManager.makeScore(DisplaySlot.SIDEBAR, ChatColor.GREEN + "Game starts", -getTime());
@@ -258,7 +258,7 @@ public class GameManager {
     }
 
     public void playLightning() {
-        getWorld().playSound(getWorld().getSpawnLocation(), Sound.AMBIENCE_THUNDER, 50000, 1.2F);
+        getWorld().playSound(getWorld().getSpawnLocation(), Sound.ENTITY_LIGHTNING_THUNDER, 50000, 1.2F);
     }
 
     public void setTime(int newTime) {

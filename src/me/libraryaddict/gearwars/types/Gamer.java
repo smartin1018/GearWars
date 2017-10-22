@@ -1,9 +1,9 @@
 package me.libraryaddict.gearwars.types;
 
 import me.libraryaddict.gearwars.GearApi;
-import net.minecraft.server.v1_7_R4.EntityPlayer;
+import net.minecraft.server.v1_12_R1.EntityPlayer;
 import org.bukkit.Material;
-import org.bukkit.craftbukkit.v1_7_R4.entity.CraftPlayer;
+import org.bukkit.craftbukkit.v1_12_R1.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 

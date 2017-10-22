@@ -29,8 +29,8 @@
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <source>1.7</source>
-          <target>1.7</target>
+          <source>1.8</source>
+          <target>1.8</target>
         </configuration>
       </plugin>
       <plugin>
@@ -55,13 +55,17 @@
   </build>
   <repositories>
     <repository>
-      <id>md_5-repo</id>
-      <url>http://repo.md-5.net/content/groups/public/</url>
-    </repository>
-    <repository>
       <id>protocol-repo</id>
       <name>ProcotolLib Repo</name>
       <url>http://repo.dmulloy2.net/content/groups/public/</url>
+    </repository>
+    <repository>
+      <id>spigot-repo</id>
+      <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+    </repository>
+    <repository>
+      <id>md_5-public</id>
+      <url>http://repo.md-5.net/content/groups/public/</url>
     </repository>
   </repositories>
   <dependencies>
@@ -72,32 +76,29 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>com.comphenix.protocol</groupId>
-      <artifactId>ProtocolLib</artifactId>
-      <version>3.7.0</version>
-      <scope>system</scope>
-      <systemPath>${basedir}/dependencies/ProtocolLib.jar</systemPath>
-    </dependency>
-    <dependency>
       <groupId>LibsDisguises</groupId>
       <artifactId>LibsDisguises</artifactId>
-      <version>8.2.6</version>
-      <scope>system</scope>
-      <systemPath>${basedir}/dependencies/LibsDisguises-8.2.6.jar</systemPath>
-    </dependency>
-    <dependency>
-      <groupId>org.spigotmc</groupId>
-      <artifactId>spigot-api</artifactId>
-      <version>1.0</version>
-      <scope>system</scope>
-      <systemPath>${basedir}/dependencies/spigot-api-1.7.10.jar</systemPath>
+      <version>9.0.7</version>
+      <scope>provided</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>spigot-api</artifactId>
+          <groupId>org.spigotmc</groupId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.spigotmc</groupId>
       <artifactId>spigot</artifactId>
-      <version>1.0</version>
+      <version>1.12.2-R0.1-SNAPSHOT</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.comphenix.protocol</groupId>
+      <artifactId>ProtocolLib</artifactId>
+      <version>4.3.0</version>
       <scope>system</scope>
-      <systemPath>${basedir}/dependencies/spigot-1.7.10.jar</systemPath>
+      <systemPath>${basedir}/dependencies/ProtocolLib.jar</systemPath>
     </dependency>
     <dependency>
       <groupId>me.libraryaddict</groupId>

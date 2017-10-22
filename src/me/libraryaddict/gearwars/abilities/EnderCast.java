@@ -40,7 +40,7 @@ public class EnderCast extends AbilityListener implements Disableable {
                     + "Your soul is weary from being created. Try again after invincibilty has worn off");
         } else if (!npcs.containsValue(player.getName())) {
             player.sendMessage(ChatColor.YELLOW + "You gaze at the block and slowly your inner self appears");
-            List<Block> blockList = player.getLastTwoTargetBlocks(null, 500);
+            List<Block> blockList = player.getLastTwoTargetBlocks((Set<Material>) null, 500);
             if (!blockList.isEmpty()) {
                 Block block = blockList.get(0);
                 Location spawnLoc = block.getLocation().clone().add(0.5, 1, 0.5);

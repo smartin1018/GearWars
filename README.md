@@ -15,7 +15,7 @@ To build the plugin, you need maven.
 
 # Maps
 
-Please be aware that I do not own these maps, they were always meant to be temperary maps.
+Please be aware that I do not own these maps, they were always meant to be temporary maps.
 You must place them in ServerRoot/Maps/GearWars/
 
 https://www.dropbox.com/s/9rrwv316vzgr2m9/CastleTown.zip?dl=0

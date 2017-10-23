@@ -46,7 +46,7 @@ public class Abilities {
                 "When sprinting, you gain a speed boost!"));
         abilities.add(new Ability(Fraction.class, "Fraction", new ItemStack(Material.INK_SACK, 1, (short) 1), 0,
                 "Right click someone with your", "redstone to share damage with them!"));
-        abilities.add(new Ability(Ghost.class, "Ghost", new ItemStack(Material.PORTAL), 0,
+        abilities.add(new Ability(Ghost.class, "Ghost", new ItemStack(Material.GHAST_TEAR), 0,
                 "Right click on blocks with your portals", "to make them disappear for 10 seconds!"));
         abilities.add(new Ability(GraveDigger.class, "GraveDigger", new ItemStack(Material.IRON_HOE), 0,
                 "Use your book on someone then", "use it again once you have 3 kills", "to revive them back from the dead!"));
@@ -55,7 +55,7 @@ public class Abilities {
         abilities.add(new Ability(Hatcher.class, "Hatcher", new ItemStack(Material.MOB_SPAWNER), 0,
                 "Spawn mobs from your spawners!", "They will not attack you!", "Change the mob type by using",
                 "A monster egg on them!", "Obtain monster eggs by slaughtering other players!"));
-        abilities.add(new Ability(Jesus.class, "Jesus", new ItemStack(Material.WATER), 0, "Walk on water!"));
+        abilities.add(new Ability(Jesus.class, "Jesus", new ItemStack(Material.END_CRYSTAL), 0, "Walk on water!"));
         // abilities.add(new Ability(Leech.class, "Leech", new ItemStack(Material.REDSTONE), 0,
         // "Each hit on a enemy player heals you a little!"));
         abilities.add(new Ability(Looter.class, "Looter", new ItemStack(Material.CHEST), 0, "Chests have better loot!"));
@@ -67,7 +67,7 @@ public class Abilities {
                 "Strength boost in the water!"));
         abilities.add(new Ability(Rewind.class, "Rewind", new ItemStack(Material.WATCH), 0, "Teleport backwards in time",
                 "every 30 seconds to your location", "30 seconds ago!"));
-        abilities.add(new Ability(Salamander.class, "Salamander", new ItemStack(Material.LAVA), 0, "Do not fear the lava!"));
+        abilities.add(new Ability(Salamander.class, "Salamander", new ItemStack(Material.SAND), 0, "Do not fear the lava!"));
         abilities.add(new Ability(Shadows.class, "Shadows", new ItemStack(Material.POTION, 1, (short) 8206), 0,
                 "Stand still for 20 seconds to become", "completely invisible and unattackable!"));
         abilities.add(new Ability(Skinner.class, "Skinner", new ItemStack(Material.SKULL_ITEM, 1, (short) 3), 0,

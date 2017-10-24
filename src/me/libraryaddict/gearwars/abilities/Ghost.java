@@ -24,7 +24,7 @@ public class Ghost extends AbilityListener implements Disableable {
         final Player player = event.getPlayer();
         if (hasAbility(player)) {
             if (event.getAction() == Action.RIGHT_CLICK_BLOCK && event.getItem() != null
-                    && event.getItem().getType() == Material.PORTAL) {
+                    && event.getItem().getType() == Material.GLASS) {
                 event.setCancelled(true);
                 final BlockState state = event.getClickedBlock().getState();
                 state.getBlock().setType(Material.AIR);
@@ -39,7 +39,7 @@ public class Ghost extends AbilityListener implements Disableable {
                             state.getBlock().setTypeIdAndData(state.getTypeId(), state.getRawData(), false);
                         }
                         if (hasAbility(player)) {
-                            HashMap<Integer, ItemStack> drops = player.getInventory().addItem(new ItemStack(90));
+                            HashMap<Integer, ItemStack> drops = player.getInventory().addItem(new ItemStack(20));
                             for (Map.Entry<Integer, ItemStack> entry : drops.entrySet()) {
                                 player.getWorld().dropItemNaturally(player.getLocation(), entry.getValue());
                             }
@@ -53,7 +53,7 @@ public class Ghost extends AbilityListener implements Disableable {
     @Override
     public void registerListener() {
         for (Gamer gamer : getGamers()) {
-            gamer.getPlayer().getInventory().addItem(new ItemStack(Material.PORTAL, 6));
+            gamer.getPlayer().getInventory().addItem(new ItemStack(Material.GLASS, 6));
         }
     }
 

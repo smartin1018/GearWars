@@ -1,7 +1,7 @@
 name: GearWars
 main: me.libraryaddict.gearwars.GearWars
 author: libraryaddict
-version: §fbuilt on §a22-10-2017 18:32
+version: §fbuilt on §a24-10-2017 02:42
 depend: [ProtocolLib, InventoryApi]
 load: STARTUP
 commands:
